@@ -23,7 +23,11 @@ Aplicação **Alomundo WEB** desenvolvida em **Java** e executada em um containe
 ### Abra o navegador em:
  - http://localhost:8080/
  ou
+- http://localhost:8080/?nome=Java
+ ou
  - http://localhost:8080/servlet/CtrAloMundo
+ ou
+- http://localhost:8080/servlet/CtrAloMundo?nome=Java
 
 ### Remover imagem
  - docker rmi alomundow_java_docker

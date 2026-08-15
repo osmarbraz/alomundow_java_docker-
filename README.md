@@ -4,20 +4,21 @@ AplicaÃ§Ã£o **Alomundo WEB** desenvolvida em **Java** e executada em um containe
 
 ## Sobre o projeto
 
-- O projeto foi desenvolvido utilizando o **NetBeans**.
-- O nome do projeto deve ser **alomundow_java_docker**.
-- Utiliza o **Java 8**.
-- Utiliza o **Apache Tomcat 9** como servidor de aplicaÃ§Ãµes Web.
-- Utiliza o **Apache Maven** para automatizar o processo de construÃ§Ã£o da aplicaÃ§Ã£o.
-- Utiliza o **Docker** para criar uma imagem e executar a aplicaÃ§Ã£o em um container.
+ - O projeto foi desenvolvido utilizando o **NetBeans**.
+ - O nome do projeto deve ser **calculadoraw_docker**.
+ - Utiliza o **Java 8**.
+ - Utiliza o **Apache Tomcat 9** como servidor de aplicações Web.
+ - Utiliza o **Apache Maven** para automatizar o processo de construção da aplicação.
+ - A aplicação é empacotada no formato **WAR (Web Application Archive)**.
+ - Utiliza o **Docker** para criar uma imagem e executar a aplicação em um container.
 
 ## Comandos Docker
- - Utilizer o terminal do powershel em modo administrador. 
+ - Utilizer o terminal do Powershel em modo administrador. 
 
-### Construir a aplicaÃ§Ã£o
+### Construir a aplicação
  - docker build -t alomundow_java_docker .
 
-### Rodar a aplicaÃ§Ã£o
+### Rodar a aplicação
  - docker run --rm -p 8080:8080 alomundow_java_docker
 
 ### Abra o navegador em:

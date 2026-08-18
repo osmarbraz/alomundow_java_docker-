@@ -1,6 +1,6 @@
 # Alomundo Java WEB com Docker
 
-AplicaÃ§Ã£o **Alomundo WEB** desenvolvida em **Java** e executada em um container Docker.
+Aplicação **Alomundo WEB** desenvolvida em **Java** e executada em um container Docker.
 
 ## Sobre o projeto
 

@@ -13,7 +13,7 @@ Aplicação **Alomundo WEB** desenvolvida em **Java** e executada em um container 
  - Utiliza o **Docker** para criar uma imagem e executar a aplicação em um container.
 
 ## Comandos Docker
- - Utilizer o terminal do Powershel em modo administrador. 
+ - Utilizar o terminal do Windows Powershel em modo administrador.
 
 ### Construir a aplicação
  - ```docker build -t alomundow_java_docker .```

@@ -16,10 +16,10 @@ Aplicação **Alomundo WEB** desenvolvida em **Java** e executada em um container 
  - Utilizer o terminal do Powershel em modo administrador. 
 
 ### Construir a aplicação
- - docker build -t alomundow_java_docker .
+ - ```docker build -t alomundow_java_docker .```
 
 ### Rodar a aplicação
- - docker run --rm -p 8080:8080 alomundow_java_docker
+ - ```docker run --rm -p 8080:8080 alomundow_java_docker```
 
 ### Abra o navegador em:
  - http://localhost:8080/
@@ -31,4 +31,11 @@ Aplicação **Alomundo WEB** desenvolvida em **Java** e executada em um container 
 - http://localhost:8080/servlet/AloMundo?nome=Java
 
 ### Remover imagem
- - docker rmi alomundow_java_docker
+ - ```docker rmi alomundow_java_docker```
+
+## Arquitetura do Sistema
+
+![Arquitetura](arquitetura.png)
+
+## Docker Hub
+ - https://hub.docker.com/r/osmarbraz/alomundo_java_docker

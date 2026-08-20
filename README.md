@@ -38,4 +38,4 @@ Aplicação **Alomundo WEB** desenvolvida em **Java** e executada em um container 
 ![Arquitetura](arquitetura.png)
 
 ## Docker Hub
- - https://hub.docker.com/r/osmarbraz/alomundo_java_docker
+ - https://hub.docker.com/r/osmarbraz/alomundow_java_docker

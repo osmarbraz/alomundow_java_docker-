@@ -5,7 +5,7 @@ Aplicação **Alomundo WEB** desenvolvida em **Java** e executada em um container 
 ## Sobre o projeto
 
  - O projeto foi desenvolvido utilizando o **NetBeans**.
- - O nome do projeto deve ser **calculadoraw_docker**.
+ - O nome do projeto deve ser **alomundow_java_docker**.
  - Utiliza o **Java 8**.
  - Utiliza o **Apache Tomcat 9** como servidor de aplicações Web.
  - Utiliza o **Apache Maven** para automatizar o processo de construção da aplicação.

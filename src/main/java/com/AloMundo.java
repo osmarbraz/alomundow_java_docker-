@@ -17,11 +17,11 @@ public class AloMundo extends HttpServlet {
 
         try ( PrintWriter out = response.getWriter()) {
             out.println("<html><head><title>Alo Mundo</title></head><body>");
-            out.println("<h1>Alo Mundo</h1>");
+            out.println("<h1>Alô, mundo!</h1>");
 
             String nome = request.getParameter("nome")!=null?request.getParameter("nome"):"Docker";
          
-            out.print("Alo Mundo, " + nome + "! <p></body></html>");
+            out.print("Alô, mundo, " + nome + "!<p></body></html>");
         }
     }
 }

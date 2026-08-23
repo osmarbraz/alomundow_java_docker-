@@ -1,9 +1,9 @@
-# Define a imagem base utilizada para executar a aplica√ß√£o Web Java.
-# A imagem cont√©m o Apache Tomcat 9.0 com JDK 8.
+# Define a imagem base utilizada para executar a aplicaÁ„o Web Java.
+# A imagem contÈm o Apache Tomcat 9.0 com JDK 8.
 FROM tomcat:9.0-jdk8
 
-# Copia o arquivo WAR da aplica√ß√£o, previamente gerado pelo Maven,
-# do computador para o diret√≥rio de aplica√ß√µes Web do Tomcat
+# Copia o arquivo WAR da aplicaÁ„o, previamente gerado pelo Maven,
+# do computador para o diretÛrio de aplicaÁıes Web do Tomcat
 # dentro do container.
 #
 # Arquivo de origem:
@@ -12,33 +12,33 @@ FROM tomcat:9.0-jdk8
 # Arquivo de destino dentro do container:
 # /usr/local/tomcat/webapps/ROOT.war
 #
-# O nome ROOT.war faz com que o Tomcat disponibilize a aplica√ß√£o
+# O nome ROOT.war faz com que o Tomcat disponibilize a aplicaÁ„o
 # diretamente na raiz do servidor Web.
 #
-# Dessa forma, a aplica√ß√£o poder√° ser acessada utilizando:
+# Dessa forma, a aplicaÁ„o poder· ser acessada utilizando:
 # http://localhost:8080
 COPY ./target/alomundow_java_docker-0.0.1.war /usr/local/tomcat/webapps/ROOT.war
 
-# Informa que a aplica√ß√£o Web utiliza a porta 8080 dentro do container.
+# Informa que a aplicaÁ„o Web utiliza a porta 8080 dentro do container.
 #
-# A porta 8080 √© a porta HTTP padr√£o utilizada pelo Tomcat
-# para receber as requisi√ß√µes da aplica√ß√£o.
+# A porta 8080 È a porta HTTP padr„o utilizada pelo Tomcat
+# para receber as requisiÁıes da aplicaÁ„o.
 #
 # IMPORTANTE:
 # O comando EXPOSE apenas documenta a porta utilizada pelo
-# container. Para acessar a aplica√ß√£o pelo computador, √©
-# necess√°rio publicar a porta utilizando o par√¢metro -p
-# no comando docker run ou a configura√ß√£o ports no Docker Compose.
+# container. Para acessar a aplicaÁ„o pelo computador, È
+# necess·rio publicar a porta utilizando o par‚metro -p
+# no comando docker run ou a configuraÁ„o ports no Docker Compose.
 EXPOSE 8080
 
 # Define o comando executado quando o container for iniciado.
 #
-# "catalina.sh" √© o script utilizado pelo Tomcat para controlar
-# o servidor de aplica√ß√µes.
+# "catalina.sh" È o script utilizado pelo Tomcat para controlar
+# o servidor de aplicaÁıes.
 #
-# O par√¢metro "run" inicia o Tomcat em primeiro plano,
+# O par‚metro "run" inicia o Tomcat em primeiro plano,
 # mantendo o processo principal ativo dentro do container.
 #
-# Manter o Tomcat em primeiro plano √© importante para que o
+# Manter o Tomcat em primeiro plano È importante para que o
 # Docker consiga acompanhar o processo principal do container.
 CMD ["catalina.sh", "run"]
